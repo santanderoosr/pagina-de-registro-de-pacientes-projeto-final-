@@ -2,11 +2,12 @@
       e.preventDefault(); // Evitar que se envíe el formulario
 
       // Obtener los valores de los campos
-      var nombre = document.getElementById("nombre").value;
-      var apellido = document.getElementById("apellido").value;
+      var nombre = document.getElementById("nome").value;
+      var apellido = document.getElementById("sobrenome").value;
       var email = document.getElementById("email").value;
       var cpf = document.getElementById("cpf").value;
       var numCarton = document.getElementById("numCarton").value;
+      var Endereco = document.getElementById("Endereco").value;
 
       // Validar que los campos no estén vacíos
       if (nombre === "" || apellido === "" || email === "" || cpf === "" || numCarton === "") {
