@@ -1,6 +1,5 @@
 body {
-  background-color: #fff;
-  color: #fff; /
+  background-color: #fff; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,6 +7,7 @@ body {
 
 header {
   background-color: #0EA883;
+  color: #fff; 
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,7 @@ header {
 }
 
 .logo img {
-  width: 100px; 
+  width: 100px;
 }
 
 nav ul {
@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 .login-btn {
-  background-color: orange; /* Botón de login naranja */
+  background-color: orange; 
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -42,25 +42,107 @@ nav ul li a {
 }
 
 .main-content {
+  background-color: #0EA883; 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Ajustar altura según sea necesario */
+  text-align: center;
+  padding: 40px;
+  border-radius: 0px;
+ 
 }
 
-.green-box {
-  background-color: #0EA883; /* Fondo verde */
+.main-content h1, .main-content h3, .main-content h4 {
+  color: #fff; 
+}
+.sobre-section {
+  text-align: center;
   padding: 40px;
-  border-radius: 16px;
+}
+
+.sobre-section h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sobre-section p {
+  margin-bottom: 30px;
+}
+
+.sobre-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.steps {
   text-align: center;
 }
 
-.green-box h1 {
-  font-size: 2.5em;
+.steps h2 {
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.green-box h3 {
-  font-size: 1.5em;
+.steps ol {
+  list-style: none;
+  padding: 0;
+}
+
+.steps ol li {
+  margin-bottom: 10px;
+}
+
+
+.steps ol li::before {
+  content: counter(step);
+  counter-increment: step;
+  background-color: #0EA883;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+.description {
+  background-color: rgba(14, 168, 131, 0.44);
+  color: #000;
+  padding: 40px;
+  text-align: center;
+}
+
+.description h4 {
+  margin-bottom: 10px;
+}
+
+.description p {
   margin-bottom: 20px;
+
+}
+
+.empresas-parceiras {
+  background-color: #f2f2f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.empresas-parceiras h2 {
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  width: 150px; 
+  margin: 10px; 
 }
